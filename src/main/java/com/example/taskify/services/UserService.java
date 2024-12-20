@@ -29,7 +29,7 @@ public class UserService {
         String encodedPassword = passwordEncoder.encode(password);
 
         User user = new User();
-        user.setUsername(username);
+        user.setName(username);
         user.setPassword(encodedPassword);
 
         return userRepository.save(user);
